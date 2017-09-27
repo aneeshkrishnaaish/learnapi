@@ -4,17 +4,17 @@ class Database extends PDO {
 //http://prash.me/php-pdo-and-prepared-statements/
 
 	
-//    const DB_HOST='localhost';
-//    const DB_PORT='3306';
-//    const DB_NAME='learn';
-//    const DB_USER='root';
-//    const DB_PASS='123';
+   const DB_HOST='localhost';
+   const DB_PORT='3306';
+   const DB_NAME='learn';
+   const DB_USER='root';
+   const DB_PASS='root';
 
- 	const DB_HOST='localhost';
- 	const DB_PORT='3306';
- 	const DB_NAME='id1300605_learn';
- 	const DB_USER='id1300605_learnapi';
- 	const DB_PASS='admin123';
+ 	// const DB_HOST='localhost';
+ 	// const DB_PORT='3306';
+ 	// const DB_NAME='id1300605_learn';
+ 	// const DB_USER='id1300605_learnapi';
+ 	// const DB_PASS='admin123';
       
 	public function __construct($driver_options=null) {
 	

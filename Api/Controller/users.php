@@ -14,7 +14,7 @@ class Users{
 				city,country,postal_code,user_phone,user_image,langitude,latitude,user_status
 				from restaurant_user where user_status =:user_status AND user_role=:user_role", $array); */
 		
-		$result = $db->queryWithParamsArray("SELECT *FROM user", $array);
+		$result = $db->queryWithParamsArray("SELECT *FROM app_user", $array);
 		
 		if($result->rowCount() > 0 )
 			return $result->fetchAll();
