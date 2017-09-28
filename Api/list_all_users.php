@@ -9,12 +9,13 @@ $response = array();
 
 // include db connect class
 
-require_once __DIR__ . '/Controller/users.php';
+require_once __DIR__ . '/Controller/Register.php';
+
 
 // include_once('/Api/Controller/users.php');
 
 
-		$restObj = new Users();
+		$restObj = new Register();
 		$result = $restObj->getAllUsers();
 		if($result)
 		{
