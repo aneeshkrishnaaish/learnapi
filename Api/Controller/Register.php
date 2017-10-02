@@ -28,7 +28,7 @@ class Register{
 		$stmt = $db->queryWithParamsArray("insert into app_user(app_user_name, app_user_pass,
 				app_user_email, app_user_phone, app_user_gender, app_user_image, app_user_status)
 				values(:app_user_name, :app_user_pass, :app_user_email, :app_user_phone,
-				:app_user_gender, :app_user_image, :app_user_status)",$array);
+				:app_user_gender, :app_user_email, :app_user_email)",$array);
 		if($stmt){
 			return TRUE;
 		}

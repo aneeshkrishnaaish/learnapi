@@ -18,9 +18,11 @@ if (!empty($_GET["app_user_name"]) && !empty($_GET["app_user_pass"])) {
 		$result = $userObj->login($_GET);
 		if($result)
 		{
-			$response["data"] = array();
-			array_push($response["data"], $result);
-			$response["success"] = 1;
+			$response["error"] = FALSE;
+			$response["user"] = $result;
+			// $response["user"] = array($result);
+			// array_push($response["user"], $result);
+			// $response["success"] = 1;
 		}
 		else
 		{
